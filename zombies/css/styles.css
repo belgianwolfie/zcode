@@ -1,0 +1,279 @@
+/* ============================== */
+/* ! Layout for desktop version   */
+/* ============================== */
+
+
+	.mt20 {
+		margin-top:20px;
+	}
+	.mt60 {
+		margin-top:60px;
+	}
+	.mt80 {
+		margin-top:80px;
+	}
+	
+	.mb80 {
+		margin-bottom:80px;
+	}
+	
+	body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background:url("../images/bg.png");
+	}
+	
+	a {
+	color:#efefef;
+	text-decoration:none;
+	}
+	
+	a:hover {
+		color:#dddddd;
+		border-bottom:1px dotted #dddddd;
+	}
+	
+	a.noborder:hover {
+		border-bottom:none; 
+	}
+	
+	.header {
+	margin-bottom:40px;
+	}
+	
+	.logo {
+	background:url("../images/logo.png") no-repeat;
+	height:100px;
+	width:350px;
+	}
+	
+	.topnav ul {
+		list-style:inside;
+		list-style-type:none;
+	}
+	
+	 .topnav ul li { 
+	 display: inline;
+	 padding:10px;
+	 font-size:.9em;
+	 background:url("../images/topmenusep.png") no-repeat top right;
+	 text-transform:uppercase;
+	 }
+	 
+	.header .logo h1 {
+    color: transparent;
+    font-size: 0;
+    margin-left: -1000px;
+	}
+	
+	.container p {
+	color: #fff;
+	line-height: 100px;
+	background: #000;
+	text-align: center;
+	margin: 20px 0 0 0;
+	}
+	
+	.topbar {
+    background: none repeat scroll 0 0 #2D2C2C;
+    color: #EFEFEF;
+    font-size: 0.8em;
+    padding-bottom: 13px;
+    padding-top: 19px;
+	margin-bottom:60px;
+	}
+	
+	
+	/* ----------------------------------------- SEARCH --- */
+	form {
+		height:40px;
+	}
+	
+	.search {
+		display:block;
+		text-align:right;
+		margin-top:4px;
+		background:url("../images/bg_search.png") no-repeat scroll -55px 0px transparent;
+		height:55px;
+		padding-top:7px;
+	}
+	
+	.shortcuts {
+    clear: both;
+    display: block;
+    margin-right: 70px;
+    position: relative;
+    right: 47%;
+    text-align: right;
+    width: 100%;
+	}
+	
+	.input {
+    border: medium none;
+    color: #AAAAAA;
+    height: 18px;
+    padding: 10px;
+    width: 43%;
+	  outline:none;
+    transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+	}
+	
+	.input:focus{
+	box-shadow: 0 0 5px rgba(234, 39, 42, 1);
+    -webkit-box-shadow: 0 0 5px rgba(234, 39, 42, 1); 
+    -moz-box-shadow: 0 0 5px rgba(234, 39, 42, 1); 
+	}
+
+	.input:hover {
+    box-shadow: 0 0 5px rgba(234, 39, 42, 1);
+    -webkit-box-shadow: 0 0 5px rgba(234, 39, 42, 1); 
+    -moz-box-shadow: 0 0 5px rgba(234, 39, 42, 1); 
+    background: #efefef;
+    }
+	
+	.button {
+    border: none;
+    background: url('../images/btn_search.png') no-repeat top left;
+    padding: 10px 8px;
+	text-indent:-9999px;
+	width:132px;
+	margin-right:12px;
+	
+	}
+
+	/* ----------------------------------------- STATS --- */	
+	.stats { 
+	margin-top:50px;
+	margin-bottom:50px;
+	}
+	.stats .fourcol{
+		margin-right:0.8%;
+	}
+	
+	/* ----------------------------------------- STEPS --- */	
+	.steps .threecol {
+		margin-right:8%;
+	}
+	
+	.steps .last {
+		margin-right:0;
+	}
+	
+	.steps .prevention {
+		position:relative;
+	}
+	
+	/* ------------------------------------ TWITTER TICKER --- */	
+	.tweets {
+		margin-top:-5px;	
+	}
+	
+	.twitterbird {
+		display:block;
+		float:left;
+		margin-right:8px;
+	}
+
+	#ticker {
+	height: 16px;
+	overflow: hidden;
+	float:left;
+	}
+
+	#ticker li {
+		height: 40px;
+	}
+	/* --------------------------------- NIVO --- */
+	.nivoSlider {
+    position:relative;
+    width:930px; 
+    height:507px;
+   background:url(../images/loading.gif) no-repeat 50% 50%;
+	}
+	.nivoSlider img {
+		position:absolute;
+		top:0px;
+		left:0px;
+		display:none;
+	}
+	.nivoSlider a {
+		border:0;
+		display:block;
+		}
+		
+	/* ---------------------------- TIME TO RUN PAGE --- */
+	img.main {
+		border:10px solid #ffffff;	
+	}
+	
+	.container p {
+		background:none;
+		line-height:1.6em;
+		text-align:left;
+	}
+
+/* ============================= */
+/* ! Layout for mobile version   */
+/* ============================= */
+
+@media handheld, only screen and (max-width: 767px) {
+
+	body {
+		margin-bottom: 30px;
+	}
+	
+	.mainpic, .stats, .twitter {
+		display:none;
+	}
+	
+	.logo {
+	background:url("../images/logo_mobile.png") no-repeat;
+	background-position:center;
+	height:206px;
+	width:261px;
+	}
+	
+	.input {
+		width:52%;
+		margin-left:38px;
+	}
+	
+	.search {
+		margin-top:30px;
+		text-align:center;
+		background:none;
+	}
+	
+	.shortcuts {
+		right:0;
+		text-align:center;
+		margin-top:30px;
+	}
+	
+	.button {
+		width:48px; 
+	}
+	.steps .prevention, .steps .timetorun, .steps .termination {
+		
+		margin-bottom:20px;
+		text-align:center;
+	}
+	
+
+
+}
+
+
+/* ========================================== */
+/* ! Provide higher res assets for iPhone 4   */
+/* ========================================== */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) { 
+
+/*	.logo {
+		background: url(logo2x.jpg) no-repeat;
+		background-size: 212px 303px;
+	}*/
+
+}

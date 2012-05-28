@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Global Zombie Institute - time to run</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+	<!-- 1140px Grid styles for IE -->
+	<!--[if lte IE 9]><link rel="stylesheet" href="css/ie.css" type="text/css" media="screen" /><![endif]-->
+
+	<!-- The 1140px Grid - http://cssgrid.net/ -->
+	<link rel="stylesheet" href="css/1140.css" type="text/css" media="screen" />
+	
+	<!-- Your styles -->
+	<link rel="stylesheet" href="css/styles.css" type="text/css" media="screen" />
+	
+	<!--css3-mediaqueries-js - http://code.google.com/p/css3-mediaqueries-js/ - Enables media queries in some unsupported browsers-->
+	<script type="text/javascript" src="js/css3-mediaqueries.js"></script>
+	
+
+    <!-- jQuery includes -->
+	<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+    
+    <style>
+	/* ------------------- PAGE EXCEPTIONS : inline for my own convenience :) --- */
+	@media handheld, only screen and (max-width: 767px) {
+	#ttrside, .twitter, .steps {
+		display:none;
+	}
+	.row .sixcol{
+		text-align:center;
+	}
+	}
+	</style>
+    
+</head>
+
+
+<body>
+<!-- jQuery ticker -->
+<script type="text/javascript">
+	$(window).load(function() {
+    function tick(){
+		$('#ticker li:first').slideUp( function () { $(this).appendTo($('#ticker')).slideDown(); });
+	}
+	setInterval(function(){ tick () }, 5000);
+});
+</script>
+<div class="container topbar">
+	<div class="row">
+   		<div class="onecol">
+		</div>
+        <div class="fivecol topnav">
+			<ul>
+            	<li><a href="/">home</a></li>
+                <li><a href="/news">news</a></li>
+                <li><a href="/carreers">carreers</a></li>
+                <li><a href="/briefing-room">briefing room</a></li>
+             </ul>
+		</div>
+        <div class="fivecol twitter last">
+        		<span class="twitterbird">
+				<img align="absmiddle" src="images/twitterbird.png">
+                </span>
+            	<span class="tweets">
+                <ul id="ticker">
+                    <li>
+                        Ordered the #Zappos zombie-gear for $30 at #zappos website.
+                    </li>
+                    <li>
+                        Damnit. Taking out the trash and got bitten :/ #zombies #iamscrewed
+                    </li>
+                    <li>
+                        My dog acting weird today. Wonder if it got bitten by #zombies
+                    </li>
+                    <li>
+                        .@MayorOffice Have there been zombie sightings this evening?
+                    </li>
+                </ul>
+                	
+                </span>
+		</div>
+        <div class="onecol">
+		</div>
+	</div>
+</div>
+
+<div class="container header">
+	<div class="row">
+    	<div class="onecol">
+		</div>
+        <a href="index.html">
+		<div class="fourcol logo">
+			<h1>Welcome to the Global Zombie Institute - Stay safe !</h1>
+		</div>
+        </a>
+       <div class="onecol">
+		</div>
+        <div class="fivecol">
+			  <span class="shortcuts">
+       		     <img alt="call 1-800-ZOMBIESTOP" src="images/1800.png">
+             </span>
+			 <span class="search">
+                 <form action="index.html" method="post" id="ghostform" name="ghostform">
+                    <input type="text" name="query" value="What are you looking for?" class="input">
+                    <input type="submit" src="images/btn_search.png" alt="Search" class="button">
+                  </form>    
+              </span>
+		</div>
+
+        <div class="onecol">
+		</div>
+	</div>
+</div>
+
+
+
+<div class="container">
+	<div class="row">
+    	<div class="onecol">
+		</div>
+    	<div class="threecol">
+       		<div id="ttrside">
+               <img alt="time to run" src="images/ttr_side_top.png">
+               <a class="noborder" href="http://www.zappos.com"><img alt="zappos running gear promo" src="images/ttr_side_bottom.png" border="0"></a>
+            </div>
+		</div>
+        <div class="onecol">
+		</div>
+		<div class="sixcol content">
+			<img alt="time to run main" class="main" src="images/ttr_main.jpg">
+            <p>Dragée powder dragée jelly-o jujubes brownie cheesecake faworki applicake. Gingerbread candy canes bear claw tart. Brownie chupa chups macaroon tootsie roll oat cake ice cream. Biscuit dragée marzipan lemon drops jelly-o. Topping pudding bonbon cake carrot cake liquorice lemon drops. Chocolate bar dessert pie biscuit. Toffee apple pie bear claw ice cream candy canes dessert chocolate bar. Pudding sugar plum candy chocolate cake jujubes pastry tootsie roll. Brownie lollipop gummies candy canes wafer cake sugar plum. Bonbon chocolate gingerbread caramels.<br><br>
+
+Brownie brownie gummi bears sugar plum. Toffee oat cake carrot cake jelly-o sweet roll lollipop jujubes pudding. Lollipop cheesecake lemon drops jelly-o ice cream tart toffee chupa chups topping. Jelly jujubes ice cream gingerbread halvah pudding ice cream. Jelly chocolate sweet roll powder. Tart jujubes macaroon pie soufflé chocolate. Jelly beans lemon drops chocolate bar topping cotton candy.</p>
+		<img alt="time to run graph" class="mt60" src="images/ttr_graph.png">
+		</div>
+        <div class="onecol">
+			
+		</div>
+	</div>
+</div>
+
+<div class="container steps mt80 mb80">
+	<div class="row">
+    <div class="onecol">
+		</div>
+    	<div class="threecol prevention">
+       		<img src="images/prevention.png">
+		</div>
+		<div class="threecol timetorun">
+			<img src="images/timetorun.png">
+		</div>
+        <div class="threecol termination last">
+			<img src="images/termination.png">
+		</div>
+        <div class="onecol">
+		</div>
+	</div>
+</div>
+
+
+
+</body>
+
+</html>
